@@ -1,0 +1,114 @@
+{
+  "@context": {
+    "@language": "en-us",
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "CIP119": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0119/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP119:body",
+      "@context": {
+        "references": {
+          "@id": "CIP119:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Identity": "CIP119:IdentityReference",
+            "Link": "CIP119:LinkReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP119:referenceHash",
+              "@context": {
+                "hashDigest": "CIP119:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        },
+        "paymentAddress": "CIP119:paymentAddress",
+        "givenName": "CIP119:givenName",
+        "image": "CIP119:image",
+        "objectives": "CIP119:objectives",
+        "motivations": "CIP119:motivations",
+        "qualifications": "CIP119:qualifications",
+        "doNotList": "CIP119:doNotList"
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [],
+  "hashAlgorithm": {
+    "@value": "blake2b-256"
+  },
+  "body": {
+    "doNotList": false,
+    "givenName": {
+      "@value": "GNP1_DRep"
+    },
+    "motivations": {
+      "@value": "I want to be a DRep because I’m passionate about representing the voices of all Cardano stakeholders in a way that is fair, transparent, and genuinely decentralized. Through my work and engagement in the Cardano ecosystem, I’ve developed a deep understanding of the importance of empowering community voices and fostering balanced decision-making. With my background in compliance including financial services and forensic technology I bring both practical experience and a strong ethical commitment to advocate for a more inclusive, transparent blockchain governance structure. I aim to contribute my perspective and knowledge to create a Cardano where fairness is central, and every member’s voice truly counts."
+    },
+    "objectives": {
+      "@value": "As a dedicated advocate for decentralization and fairness, I aim to empower Cardano’s community with a voice that aligns with my commitment to transparency and equity. I believe that Cardano’s governance model should truly represent all stakeholders, promoting decisions that benefit everyone rather than just a few. My goal as a DRep is to build a foundation of trust and inclusiveness that reflects the decentralized ethos of blockchain technology. You can find more about my values and mission at http://grahamsnumberplus1.com"
+    },
+    "paymentAddress": {
+      "@value": "addr1qxuyx8le4a04nq4t63kenxfqdza6w7cpycw64mgvjwqh0qlzgwu3g7mxzj483w4dvmkdcx8wkfatjd7q5ptmxk2yufpsvwkank"
+    },
+    "qualifications": {
+      "@value": "30 years of experience in compliance and technology in Financial Services, Consulting and Law Enforcement."
+    },
+    "references": [
+      {
+        "@type": "Link",
+        "label": {
+          "@value": "Website"
+        },
+        "uri": {
+          "@value": "https://grahsmsnumberplus1.com"
+        }
+      },
+      {
+        "@type": "Link",
+        "label": {
+          "@value": "X (Formally Twitter)"
+        },
+        "uri": {
+          "@value": "https://X.com/GrahamsNoPlus1"
+        }
+      },
+      {
+        "@type": "Link",
+        "label": {
+          "@value": "LinkedIn"
+        },
+        "uri": {
+          "@value": "https://X.com/GrahamsNoPlus1"
+        }
+      },
+      {
+        "@type": "Identity",
+        "label": {
+          "@value": "X (Formally Twitter)"
+        },
+        "uri": {
+          "@value": "https://X.com/GrahamsNoPlus1"
+        }
+      }
+    ]
+  }
+}
